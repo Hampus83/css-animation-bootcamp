@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url(/starwarscrawler/assets/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+    color: #FFE81F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: crawl 120s;
+}
+
+.crawler {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes crawl {
+    0% {
+        transform: perspective(350px) rotateX(25deg)  translateY(100%);
+    }
+
+    100% {
+        transform: perspective(350px) rotateX(25deg) translateY(-500%);
+    }
+}
+
+.crawler h2 {
+    margin-top: 8rem;
+    font-size: 60px;
+}
+
+.crawler h1 {
+    font-size: 100px;
+}
+
+.crawler p {
+    font-size: 45px;
+    
+}
+

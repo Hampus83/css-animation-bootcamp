@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+article {
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 90px;
+    left: 230px;
+    transition: all 1s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(95, 89, 89, 0.2);
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.green {
+    background-color: green;
+}
+
+.ice {
+    background-color: lightskyblue;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.pink {
+    background-color: pink;
+}
+
+body:hover .red {
+    background-color: red;
+    transform: rotate(40deg);
+    left: 360px;
+    bottom: 50px;
+    
+}
+
+body:hover .orange {
+    background-color: orange;
+    transform: rotate(30deg);
+    left: 330px;
+    bottom: 65px;
+}
+
+body:hover .yellow {
+    background-color: yellow;
+    transform: rotate(20deg);
+    left: 295px;
+    bottom: 80px;
+}
+
+body:hover .lime {
+    background-color: lime;
+    transform: rotate(10deg);
+    left: 265px;
+    bottom: 85px;
+}
+
+body:hover .green {
+    background-color: green;
+    transform: rotate(0deg);
+    left: 230px;
+    bottom: 90px;
+}
+
+body:hover .ice {
+    background-color: lightskyblue;
+    transform: rotate(-10deg);
+    left: 215px;
+    bottom: 90px;
+}
+
+body:hover .blue {
+    background-color: blue;
+    transform: rotate(-20deg);
+    left: 175px;
+    bottom: 85px;
+}
+
+body:hover .purple {
+    background-color: purple;
+    transform: rotate(-30deg);
+    left: 135px; 
+    bottom: 70px;
+}
+
+body:hover .pink {
+    background-color: pink;
+    transform: rotate(-40deg);
+    left: 105px;
+    bottom: 55px;
+}

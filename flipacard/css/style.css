@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-color: rgb(34, 43, 20);
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    animation: spin 8s infinite;
+}
+
+.card__back {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 113, 190); 
+    position: absolute;
+    transform-style: preserve-3d;
+    border: 4px solid rgb(191, 200, 209);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__back h2 {
+    transform: rotateY(180deg);
+}
+
+.card__front {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 30, 182);
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border: 4px solid rgb(191, 200, 209);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    20% {
+        transform: rotateX(0deg);
+    }
+
+    80% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateX(90deg);
+    }
+
+}
